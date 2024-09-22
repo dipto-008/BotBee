@@ -4,7 +4,8 @@
   "adminName": "Dip To",
   "botName": "Your Baby",
   "token": "ADD_YOUR_BOT_TOKEN_HERE",
-"mongodbURI":"ADD_YOUR_MONGO_DB_URI_HERE",
+"mongodbURI":"mongodb+srv://userg4185:zWfR3c1ez5zpAUj0@cluster0.mfbe2.mongodb.net/botbee?retryWrites=true&w=majority&appName=Cluster0",
+  "notes":"ADD_YOUR_MONGO_DB_URI for fast response",
   "prefix": "!",
   "api": "https://www.noobs-api.000.pe/dipto",
   "database": {
