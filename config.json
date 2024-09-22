@@ -1,0 +1,47 @@
+{
+  "owner": "Dip To",
+  "fb_ID":"m.me/dipto008",
+  "adminName": "Dip To",
+  "botName": "Your Baby",
+  "token": "ADD_YOUR_BOT_TOKEN_HERE",
+"mongodbURI":"ADD_YOUR_MONGO_DB_URI_HERE",
+  "prefix": "!",
+  "api": "https://www.noobs-api.000.pe/dipto",
+  "database": {
+    "mongo": true,
+    "json": false
+  },
+  "adminBot": [
+    6242891290
+  ],
+  "botOperator": [
+    6242891290
+  ],
+  "inbox": true,
+  "white_list_group": {
+    "enable": false,
+    "groups": [
+      -1001234567890
+    ]
+  },
+  "white_list_ID": {
+    "enable": false,
+    "IDS": [
+      111222333
+    ]
+  },
+  "ignore_list_ID": {
+    "enable": false,
+    "IDS": [
+      444555666
+    ]
+  },
+  "premium_list_ID": {
+    "enable": false,
+    "IDs": [
+      777888999
+    ]
+  },
+  "unloadCommand": {},
+  "unloadEvent": {}
+}

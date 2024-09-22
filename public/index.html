@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: #5f9ea0;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #4682b4;
+            border-radius: 5px;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        section {
+            display: none;
+            margin: 2rem 0;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .about, .project, .skills, .dashboard {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .skills ul, .dashboard ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .dashboard li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #5f9ea0;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .stats {
+            margin-top: 20px;
+        }
+
+        .stats h3 {
+            margin-bottom: 1rem;
+            color: #5f9ea0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5f9ea0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4682b4;
+        }
+
+        .btn:active {
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Telegram Bot Dashboard</h1>
+        <nav>
+            <a href="#dashboard" class="nav-link active">Dashboard</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#project" class="nav-link">Project</a>
+            <a href="#skills" class="nav-link">Skills</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="dashboard" class="dashboard active">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <h3>Bot Information</h3>
+                <ul>
+                    <li><strong>Bot Name:</strong> <span id="botName"></span></li>
+                    <li><strong>Prefix:</strong> <span id="prefix"></span></li>
+                    <li><strong>Admin Name:</strong> <span id="adminName"></span></li>
+                    <li><strong>Database:</strong> <span id="bd"> MongoDB </span></li>
+<!---- <li><strong>Total Users:</strong> <span id="totalUsers"></span></li>
+                    <li><strong>Total Threads:</strong> <span id="totalThreads"></span></li>
+               --->     
+            <li><strong>Uptime:</strong> <span id="uptime"></span></li>
+                </ul>
+                <a href="#" class="btn">Refresh Stats</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>Hello! I'm Dipto, who loves building bots and automation scripts. I have experience in creating bots that interact with users, manage group chats, and provide automated services. This portfolio showcases one of my projects: a Telegram bot built using Node.js and various APIs.</p>
+        </section>
+
+        <section id="project" class="project">
+            <h2>Project Details</h2>
+            <p>This Telegram bot is designed to handle user requests and automate group management tasks. It integrates with several APIs to enhance its capabilities, such as handling multimedia messages, responding to commands, and fetching data.</p>
+            <p>Some key features of this bot include:</p>
+            <ul>
+                <li>Automated message handling</li>
+                <li>Integration with third-party APIs</li>
+                <li>Custom message system</li>
+                <li>Group and user management</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills Used</h2>
+            <ul>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Telegram Bot API</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dipto. All rights reserved.</p>
+    </footer>
+
+    <script>
+        async function fetchData() {
+            try {
+                const options = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+                const response = await fetch('/dashboard-data',options);
+                const data = await response.json();
+
+                document.getElementById("botName").innerText = data.botName;
+                document.getElementById("prefix").innerText = data.prefix;
+                document.getElementById("adminName").innerText = data.adminName;
+                //document.getElementById("totalUsers").innerText = data.totalUsers.length;
+                //document.getElementById("totalThreads").innerText = data.totalThreads.length;
+                document.getElementById("uptime").innerText = formatUptime(data.uptime);
+            } catch (error) {
+                console.error('Error fetching dashboard data:', error);
+            }
+        }
+        function formatUptime(seconds) {
+            const hrs = Math.floor(seconds / 3600);
+            const mins = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${hrs} hours, ${mins} minutes, ${secs} seconds`;
+        }
+        const navLinks = document.querySelectorAll(".nav-link");
+        const sections = document.querySelectorAll("section");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                navLinks.forEach(link => link.classList.remove("active"));
+                sections.forEach(section => section.classList.remove("active"));
+                const target = document.querySelector(link.getAttribute("href"));
+                link.classList.add("active");
+                target.classList.add("active");
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchData();
+
+      
+            document.querySelector('.btn').addEventListener('click', (e) => {
+                e.preventDefault();
+                fetchData();
+            });
+        });
+    </script>
+</body>
+</html>

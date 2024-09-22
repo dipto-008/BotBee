@@ -1,0 +1,182 @@
+[
+  {
+    "threadId": -1002165013339,
+    "title": "TEST BABY | SIMMA",
+    "prefix": "!",
+    "threadImage": "https://api.telegram.org/file/bot7498218015:AAFXtK2tVQcmXvqA73DyBZg9yeVDrwfyjxA/profile_photos/file_5.jpg",
+    "threadAdmins": [
+      {
+        "id": 7498218015,
+        "name": "your baby test",
+        "username": "baby_test_bot",
+        "status": "admin"
+      },
+      {
+        "id": 7451534228,
+        "name": "RUBISH",
+        "username": "RUBISH00",
+        "status": "admin"
+      },
+      {
+        "id": 6242891290,
+        "name": "Dip To",
+        "username": "dipto_008",
+        "status": "admin"
+      },
+      {
+        "id": 5193938086,
+        "name": "~ANTHONY~",
+        "username": "ANTHONY_4_0_4",
+        "status": "admin"
+      }
+    ],
+    "members": [
+      {
+        "id": 6242891290,
+        "fullName": "Dip To"
+      },
+      {
+        "id": 6856210809,
+        "fullName": "Tanha Chowdhury"
+      }
+    ],
+    "count": [
+      {
+        "username": "dipto_008",
+        "senderID": 6242891290,
+        "count": 35
+      },
+      {
+        "username": "Tanhamew",
+        "senderID": 6856210809,
+        "count": 10
+      }
+    ],
+    "settings": {
+      "2024-09-07": [
+        {
+          "username": "dipto_008",
+          "senderID": 6242891290,
+          "count": 35
+        },
+        {
+          "username": "Tanhamew",
+          "senderID": 6856210809,
+          "count": 9
+        }
+      ]
+    },
+    "games": {},
+    "createdAt": "2024-09-07T17:32:01.810Z",
+    "$__": {
+      "activePaths": {
+        "paths": {
+          "threadId": "init",
+          "title": "init",
+          "prefix": "init",
+          "threadImage": "init",
+          "threadAdmins": "init",
+          "members": "init",
+          "count": "init",
+          "createdAt": "init",
+          "_id": "init",
+          "__v": "init",
+          "settings": "init",
+          "games": "init"
+        },
+        "states": {
+          "require": {},
+          "default": {},
+          "init": {
+            "_id": true,
+            "threadId": true,
+            "title": true,
+            "prefix": true,
+            "threadImage": true,
+            "threadAdmins": true,
+            "members": true,
+            "count": true,
+            "createdAt": true,
+            "__v": true,
+            "settings": true,
+            "games": true
+          }
+        }
+      },
+      "skipId": true
+    },
+    "$isNew": false,
+    "_doc": {
+      "_id": "66dc8e119700f77457a19e63",
+      "threadId": "-1002165013339",
+      "title": "TEST BABY | SIMMA",
+      "prefix": "!",
+      "threadImage": "https://api.telegram.org/file/bot7533328541:AAHXn1DRTcV6nYFtkz0Lr0NvLpbTFiSWqcM/profile_photos/file_30.jpg",
+      "threadAdmins": [
+        {
+          "id": 7533328541,
+          "name": "Your Baby",
+          "username": "your_baby_008_bot",
+          "status": "admin"
+        },
+        {
+          "id": 7451534228,
+          "name": "RUBISH",
+          "username": "RUBISH00",
+          "status": "admin"
+        },
+        {
+          "id": 6242891290,
+          "name": "Dip To",
+          "username": "dipto_008",
+          "status": "admin"
+        },
+        {
+          "id": 5193938086,
+          "name": "~ANTHONY~",
+          "username": "ANTHONY_4_0_4",
+          "status": "admin"
+        }
+      ],
+      "members": [
+        {
+          "id": 6242891290,
+          "fullName": "Dip To"
+        },
+        {
+          "id": 6856210809,
+          "fullName": "Tanha Chowdhury"
+        }
+      ],
+      "count": [
+        {
+          "username": "dipto_008",
+          "senderID": 6242891290,
+          "count": 35
+        },
+        {
+          "username": "Tanhamew",
+          "senderID": 6856210809,
+          "count": 10
+        }
+      ],
+      "createdAt": "2024-09-07T17:32:01.810Z",
+      "__v": 0,
+      "settings": {
+        "2024-09-07": [
+          {
+            "username": "dipto_008",
+            "senderID": 6242891290,
+            "count": 35
+          },
+          {
+            "username": "Tanhamew",
+            "senderID": 6856210809,
+            "count": 9
+          }
+        ]
+      },
+      "games": {}
+    }
+  }
+]

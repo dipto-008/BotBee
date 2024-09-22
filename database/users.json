@@ -1,0 +1,29 @@
+[
+  {
+    "userId": 6856210809,
+    "firstName": "Tanha",
+    "lastName": "Chowdhury",
+    "username": "Tanhamew",
+    "isBot": false,
+    "ban": {},
+    "settings": {},
+    "avatarUrl": "AgACAgUAAxUAAWbcj-5UfSNGk5cqU53aFa5l1f83AAKCwDEbuASBVrMtqk6t5_p5AQADAgADYQADNgQ",
+    "exp": 0,
+    "money": 0,
+    "joinedAt": "2024-09-06T19:11:56.290Z"
+  },
+  {
+    "userId": 6242891290,
+    "firstName": "Dip",
+    "lastName": "To",
+    "username": "dipto_008",
+    "isBot": false,
+    "languageCode": "en",
+    "ban": {},
+    "settings": {},
+    "avatarUrl": "AgACAgUAAxUAAWbcjg_8EVZGGJV9q0rQJypUtl-lAAKEsjEbHmSAV8LBfBNxEAxWAQADAgADYQADNgQ",
+    "exp": 0,
+    "money": 0,
+    "joinedAt": "2024-09-07T17:31:59.952Z"
+  }
+]
