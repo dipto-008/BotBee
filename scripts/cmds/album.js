@@ -44,11 +44,11 @@ module.exports = {
         "\n✿━━━━━━━━━━━━━━━━━━━━━━━✿";
 
     const info = await message.reply(message)
-          global.functions.onReply.set(info.messageID, {
+          global.functions.onReply.set(info.message_id, {
             commandName: this.config.name,
             type: "reply",
-            messageID: info.messageID,
-            author: event.senderID,
+            messageID: info.message_id,
+            author: event.from.id,
             link: albumOptions,
           });
 
@@ -242,7 +242,7 @@ const URL = `https://api.telegram.org/file/bot${botToken}/${filePath}`;
       );
     }
   },
-  onReply: async function ({ api, event, Reply }) {
+  onReply: async function ({ api, event, Reply, message }) {
     const admin = "100044327656712";
     api.unsendMessage(Reply.messageID);
     if (event.type == "message_reply") {
