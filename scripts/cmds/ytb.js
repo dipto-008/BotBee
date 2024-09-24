@@ -31,7 +31,7 @@ module.exports = {
         "\n {pn} -i chipi chipi chapa chapa",
     },
   },
-  onStart: async ({ api, args, event }) => {
+  onStart: async ({ api, args, event, message }) => {
     const action = args[0].toLowerCase();
 
     const checkurl =
@@ -101,7 +101,7 @@ module.exports = {
     });
   },
 
-  onReply: async ({ event, api, Reply }) => {
+  onReply: async ({ event, api, Reply,message }) => {
     const { result, action } = Reply;
     const choice = parseInt(event.body);
 
