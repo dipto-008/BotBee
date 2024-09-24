@@ -35,7 +35,7 @@ module.exports = {
         "𝗙𝗹𝗼𝘄𝗲𝗿 𝗩𝗶𝗱𝗲𝗼",
         "𝗥𝗮𝗻𝗱𝗼𝗺 𝗣𝗵𝗼𝘁𝗼",
       ];
-      const message =
+      const messag =
         "❤️‍🩹 𝗖𝗵𝗼𝗼𝘀𝗲 𝗮𝗻 𝗼𝗽𝘁𝗶𝗼𝗻𝘀 𝗕𝗮𝗯𝘆 <💝\n" +
         "✿━━━━━━━━━━━━━━━━━━━━━━━✿\n" +
         albumOptions
@@ -43,7 +43,7 @@ module.exports = {
           .join("\n") +
         "\n✿━━━━━━━━━━━━━━━━━━━━━━━✿";
 
-    const info = await message.reply(message)
+    const info = await message.reply(messag)
           global.functions.onReply.set(info.message_id, {
             commandName: this.config.name,
             type: "reply",
@@ -65,7 +65,7 @@ module.exports = {
         "𝗚𝗶𝗿𝗹 𝘃𝗶𝗱𝗲𝗼",
         "𝗙𝗿𝗶𝗲𝗻𝗱𝘀 𝗩𝗶𝗱𝗲𝗼",
       ];
-      const message =
+      const messag =
         "❤️‍🩹 𝗖𝗵𝗼𝗼𝘀𝗲 𝗮𝗻 𝗼𝗽𝘁𝗶𝗼𝗻𝘀 𝗕𝗮𝗯𝘆 <💝\n" +
         "✿━━━━━━━━━━━━━━━━━━━━━━━✿\n" +
         albumOptions
@@ -73,7 +73,7 @@ module.exports = {
           .join("\n") +
         "\n✿━━━━━━━━━━━━━━━━━━━━━━━✿";
 
-          const info = await message.reply(message)
+          const info = await message.reply(messag)
             global.functions.onReply.set(info.message_id, {
             commandName: this.config.name,
             type: "reply",
