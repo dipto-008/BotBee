@@ -60,7 +60,7 @@ thumbnails.push(info.thumbnail);
     const ii = info.message_id
 
 global.functions.reply.set(ii, {
-        commandName: 'sing',
+        commandName: 'video',
         messageID: ii,
         result
       });
