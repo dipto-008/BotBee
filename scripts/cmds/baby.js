@@ -214,7 +214,7 @@ const d = dipto.replace(/^(?:-f|find) /, '');
       }
       //----------------------------------//
       else {
-        const response = await axios.get(`${link}?text=${dipto}`);
+        const response = await axios.get(`${link}?text=${dipto}&senderID=${uid}`);
         const data = response.data.reply;
       const info = await message.reply(data)
   global.functions.onReply.set(info.message_id, {
@@ -231,10 +231,11 @@ const d = dipto.replace(/^(?:-f|find) /, '');
     }
   },
   onReply: async function ({ api, event,message }) {
+    const link = `${await baseApiUrl()}/baby`;
    // if (event.type == "message_reply") {
       const reply = event.text.toLowerCase();
       if (isNaN(reply)) {
-const response = await axios.get(`${global.functions.config.api}/baby?text=${encodeURIComponent(reply)}`,
+const response = await axios.get(`${link}/baby?text=${encodeURIComponent(reply)}&senderID=${uid}`,
         );
         const ok = response.data.reply;
        /* if (response.data.react) {
